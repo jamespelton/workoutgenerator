@@ -18,9 +18,9 @@ app.get('/', (req, res) => {
 // Generate a workout plan from the submitted form.
 // Works with no API key: plan is built deterministically in workout.js.
 app.post('/generate', (req, res) => {
-  const { goal, level, daysPerWeek, equipment } = req.body;
+  const { goal, level, days, equipment } = req.body;
 
-  const plan = generatePlan({ goal, level, daysPerWeek, equipment });
+  const plan = generatePlan({ goal, level, daysPerWeek: days, equipment });
 
   res.render('result', { plan });
 });
