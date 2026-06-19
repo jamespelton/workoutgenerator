@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout Generator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Workout Generator</h1>
+    <p class="tagline">Tell us a few things and we'll build your weekly plan.</p>
+
+    <form action="/generate" method="post" class="card">
+      <div class="field">
+        <label for="goal">What is your goal?</label>
+        <select name="goal" id="goal" required>
+          <option value="strength">Build Strength</option>
+          <option value="muscle" selected>Build Muscle</option>
+          <option value="endurance">Endurance / Conditioning</option>
+          <option value="fatloss">Fat Loss</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="level">Experience level</label>
+        <select name="level" id="level" required>
+          <option value="beginner" selected>Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="daysPerWeek">Days per week</label>
+        <input type="number" name="daysPerWeek" id="daysPerWeek" min="1" max="6" value="3" required />
+      </div>
+
+      <div class="field">
+        <label for="equipment">Available equipment</label>
+        <select name="equipment" id="equipment" required>
+          <option value="gym">Full Gym</option>
+          <option value="dumbbells">Dumbbells Only</option>
+          <option value="bodyweight" selected>Bodyweight Only</option>
+        </select>
+      </div>
+
+      <button type="submit" id="generate-btn">Generate Workout</button>
+    </form>
+  </main>
+</body>
+</html>

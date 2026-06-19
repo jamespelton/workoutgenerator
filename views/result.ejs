@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Workout Plan</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 id="plan-title"><%= plan.title %></h1>
+    <p class="summary"><%= plan.summary %></p>
+
+    <% plan.days.forEach(function(day) { %>
+      <section class="card day">
+        <h2><%= day.name %> — <%= day.focus %></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Exercise</th>
+              <th>Sets</th>
+              <th>Reps</th>
+              <th>Rest</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% day.exercises.forEach(function(ex) { %>
+              <tr>
+                <td><%= ex.name %></td>
+                <td><%= ex.sets %></td>
+                <td><%= ex.reps %></td>
+                <td><%= ex.rest %></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </section>
+    <% }); %>
+
+    <a class="back-link" href="/">&larr; Build another plan</a>
+  </main>
+</body>
+</html>

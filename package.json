@@ -1,0 +1,16 @@
+{
+  "name": "workoutgenerator",
+  "version": "1.0.0",
+  "description": "AI-powered workout plan generator. Tell it your goal, level, days per week, and available equipment and it builds you a structured weekly plan.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Pelton",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
