@@ -22,6 +22,11 @@ optional AI generation path later.
 - `POST /generate` — renders a generated plan from the submitted form
 - `GET /health` — JSON health check
 
+## Notes
+
+This branch adds a print option, a reassuring form footer, and a result-page
+action row. See the PR for details.
+
 ## Project layout
 
 - `app.js` — Express server + routes
