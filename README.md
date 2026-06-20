@@ -36,3 +36,5 @@ action row. See the PR for details.
 - `public/style.css` — styles
 
 <!-- ito re-trigger 20260620T194143Z -->
+
+<!-- ito run check for Barron 20260620T211240Z -->
