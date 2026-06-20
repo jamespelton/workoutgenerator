@@ -14,7 +14,7 @@
     <form action="/generate" method="post" class="card">
       <div class="field">
         <label for="goal">What is your goal?</label>
-        <select name="goal" id="goal" required>
+        <select name="goal" id="goal" autofocus required>
           <option value="strength">Build Strength</option>
           <option value="muscle" selected>Build Muscle</option>
           <option value="endurance">Endurance / Conditioning</option>
@@ -33,7 +33,7 @@
 
       <div class="field">
         <label for="daysPerWeek">Days per week</label>
-        <input type="number" name="daysPerWeek" id="daysPerWeek" min="1" max="6" value="3" required />
+        <input type="number" name="daysPerWeek" id="daysPerWeek" min="1" max="6" step="1" inputmode="numeric" value="3" required />
       </div>
 
       <div class="field">
