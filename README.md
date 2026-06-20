@@ -34,3 +34,5 @@ action row. See the PR for details.
 - `views/index.ejs` — the form
 - `views/result.ejs` — the rendered plan
 - `public/style.css` — styles
+
+<!-- ito re-trigger 20260620T194143Z -->
