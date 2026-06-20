@@ -1,0 +1,15 @@
+{
+  "name": "workoutgenerator",
+  "description": "Express + EJS workout plan generator. Boots on PORT (default 3000).",
+  "scripts": {
+    "build": "npm install",
+    "start": "npm start"
+  },
+  "env": {
+    "PORT": {
+      "description": "Port the Express server listens on.",
+      "value": "3000"
+    }
+  },
+  "healthcheck": "/health"
+}
